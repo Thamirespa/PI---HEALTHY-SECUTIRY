@@ -1,0 +1,170 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #555555; /* Cor de fundo cinza mais escuro */
+  color: #f0f0f0; /* Cor do texto mais claro */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal */
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Título */
+h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #f0f0f0; /* Cor do título */
+}
+
+/* Grid dos botões principais */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo */
+  justify-content: center; /* Alinha os cards ao centro */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px; /* Espaçamento interno do container */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Botões gerais */
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #888888; /* Cor de fundo dos cards */
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra dos cards */
+  transition: transform 0.3s, background-color 0.3s;
+  color: #f0f0f0;
+  width: 200px; /* Largura fixa dos cards */
+  height: 200px; /* Altura fixa dos cards */
+}
+
+.button:hover {
+  background-color: #777777; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Aumento do card ao passar o mouse */
+}
+
+/* Botão "Voltar" com estilo reduzido */
+.back-button {
+  width: 150px; /* Largura menor */
+  height: 50px; /* Altura menor */
+  font-size: 16px; /* Texto menor */
+  margin-top: 20px; /* Espaçamento superior */
+  background-color: #666666; /* Cor diferenciada */
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #555555; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Efeito de hover */
+}
+
+/* Imagens dentro dos botões */
+.button img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+/* Texto dentro dos botões */
+.button span {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsividade: ajuste dos botões principais */
+@media (max-width: 768px) {
+  .button {
+    width: 45%; /* Ajuste para 2 cards por linha em telas menores */
+    height: auto; /* Altura ajustada */
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    width: 90%; /* Ajuste para 1 card por linha em telas muito pequenas */
+  }
+}
+
+/* Estilos existentes */
+
+/* Novas regras para a página de alertas e gráfico */
+.grafico-container {
+  text-align: center; /* Centraliza a imagem */
+  margin: 40px 0; /* Espaçamento ao redor da imagem */
+}
+
+/* Estilo da imagem do gráfico */
+.grafico-imagem {
+  width: 80%; /* A imagem ocupa 80% da largura da tela */
+  max-width: 600px; /* A imagem não ultrapassa 600px de largura */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Barra de navegação no topo */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* A barra ocupa toda a largura */
+  background-color: #333; /* Cor de fundo da barra */
+  color: white; /* Cor do texto */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  z-index: 1000; /* Garante que fique acima do conteúdo */
+}
+
+.navbar-content h1 {
+  margin: 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Ajuste do layout para incluir a barra fixa */
+body {
+  margin: 0;
+  padding-top: 60px; /* Espaço abaixo da barra superior */
+}
+
+/* Estilo da imagem do gráfico */
+.grafico-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.grafico-imagem {
+  max-width: 80%; /* Adapta a largura da imagem */
+  height: auto; /* Mantém a proporção */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra da imagem */
+}
+
+/* Botão de voltar */
+.button.back-button {
+  display: inline-block;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.button.back-button:hover {
+  background-color: #777;
+}
+

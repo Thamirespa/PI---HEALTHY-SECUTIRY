@@ -1,0 +1,74 @@
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Equipamentos</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dash.css') }}">
+</head>
+<body>
+  <div class="equipamentos-container">
+    <h1>Gerenciamento de Equipamentos</h1>
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+
+    <form action="#" method="POST">
+      <input type="text" name="nome" placeholder="Nome do equipamento" required>
+      <input type="number" name="quantidade" placeholder="Quantidade" required>
+      <button type="submit">Adicionar Equipamento</button>
+    </form>
+    
+    <div class="equipamentos-list">
+      <h3>Lista de Equipamentos</h3>
+    </div>
+  </div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Equipamentos</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dash.css') }}">
+</head>
+<body>
+  <!-- Barra superior fixa -->
+  <header class="navbar">
+    <div class="navbar-content">
+      <h1>Healthy Security</h1>
+    </div>
+  </header>
+
+  <!-- Container principal -->
+  <div class="equipamentos-container">
+    <h1>Gerenciamento de Equipamentos</h1>
+
+    <!-- Botão de voltar -->
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+
+    <!-- Formulário para adicionar equipamentos -->
+    <form action="#" method="POST" class="equipamentos-form">
+      <input type="text" name="nome" placeholder="Nome do equipamento" required>
+      <input type="number" name="quantidade" placeholder="Quantidade" required>
+      <button type="submit">Adicionar Equipamento</button>
+    </form>
+    
+    <!-- Lista de equipamentos -->
+    <div class="equipamentos-list">
+      <h3>Lista de Câmeras</h3>
+      <ul>
+        <li>Câmera 1 - Entrada Principal</li>
+        <li>Câmera 2 - Estacionamento</li>
+        <li>Câmera 3 - Recepção</li>
+        <li>Câmera 4 - Corredor 1</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Footer opcional se necessário -->
+  <footer>
+    <p>&copy; 2024 Healthy Security. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+

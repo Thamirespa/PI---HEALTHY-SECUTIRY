@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vinda</title>
+  <!-- Link para o arquivo CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dash.css') }}">
+</head>
+<body>
+  <!-- Barra superior fixa -->
+  <header class="navbar">
+    <div class="navbar-content">
+      <h1>Healthy Security</h1>
+    </div>
+  </header>
+
+  <!-- Container principal -->
+  <div class="container">
+    <!-- Título -->
+    <h1>Bem-vinda Ana {{ username }}</h1>
+    
+    <!-- Grid de botões -->
+    <div class="grid-container">
+      <!-- Botões de opções -->
+      <a href="{{ url_for('dashboard_opcoes') }}" class="button">
+        <span>Dashboard e Operações</span>
+      </a>
+      <a href="{{ url_for('equipamentos') }}" class="button">
+        <span>Gerenciamento de Equipamentos</span>
+      </a>
+      <a href="{{ url_for('analise') }}" class="button">
+        <span>Análise e Relatórios</span>
+      </a>
+      <a href="{{ url_for('configuracoes') }}" class="button">
+        <span>Configurações Administração</span>
+      </a>
+      <a href="{{ url_for('seguranca') }}" class="button">
+        <span>Informativos sobre Segurança</span>
+      </a>
+    </div>
+  </div>
+  <!-- Footer opcional se necessário -->
+  <footer>
+    <p>&copy; 2024 Healthy Security. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+
+

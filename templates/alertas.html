@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alertas</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/alerta.css') }}">
+</head>
+<body>
+  <!-- Barra superior fixa -->
+  <header class="navbar">
+    <div class="navbar-content">
+      <h1>Healthy Security</h1>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <div class="alertas-container">
+    <h1>Alertas</h1>
+    <p>Veja abaixo a relação de alertas e seus status:.</p>
+
+    <!-- Tabela com nome e descrição dos alertas -->
+    <div class="tabela-container">
+      <table class="tabela-alertas">
+        <thead>
+          <tr>
+            <th>Nome do Alerta</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alerta de Segurança</td>
+            <td>Detectada uma possível ameaça na rede, verifique os logs.</td>
+          </tr>
+          <tr>
+            <td>Falha no Servidor</td>
+            <td>O servidor de backup apresentou falha e precisa ser reiniciado.</td>
+          </tr>
+          <tr>
+            <td>Erro no Banco de Dados</td>
+            <td>Erro crítico detectado no banco de dados. A operação foi interrompida.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="{{ url_for('dashboard_opcoes') }}" class="button back-button">Voltar</a>
+  </div>
+  <!-- Footer opcional se necessário -->
+  <footer>
+    <p>&copy; 2024 Healthy Security. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+

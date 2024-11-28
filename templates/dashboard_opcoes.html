@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Opções</title>
+  <!-- Link para o arquivo CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dash.css') }}">
+</head>
+<body>
+  <!-- Barra superior fixa -->
+  <header class="navbar">
+    <div class="navbar-content">
+      <h1>Healthy Security</h1>
+    </div>
+  </header>
+
+  <!-- Container principal -->
+  <div class="container">
+    <!-- Título da página -->
+    <h1>Dashboard - Escolha uma opção</h1>
+    
+    <!-- Grid de botões -->
+    <div class="grid-container">
+      <!-- Botões de opções -->
+      <a href="{{ url_for('alertas') }}" class="button">
+        <span>Alertas</span>
+      </a>
+      <a href="{{ url_for('mapa') }}" class="button">
+        <span>Mapas</span>
+      </a>
+      <a href="{{ url_for('graficos') }}" class="button">
+        <span>Gráficos</span>
+      </a>
+    </div>
+
+    <!-- Botão de voltar -->
+    <div class="back-container">
+      <a href="{{ url_for('home') }}" class="button back-button">
+        <span>Voltar</span>
+      </a>
+    </div>
+  </div>
+  <!-- Footer opcional se necessário -->
+  <footer>
+    <p>&copy; 2024 Healthy Security. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+

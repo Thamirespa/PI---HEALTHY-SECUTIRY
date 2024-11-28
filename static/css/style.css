@@ -1,0 +1,86 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Layout para o conteúdo principal */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #444;
+    transform: translateY(-4px);
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+/* Ajustes de fundo e cores */
+.bg-gray {
+    background-color: #e0e0e0;
+}
+
+.dark-gray {
+    background-color: #b0b0b0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}

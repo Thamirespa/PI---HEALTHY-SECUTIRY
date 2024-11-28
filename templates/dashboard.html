@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dash.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Dashboard</h1>
+    <div class="grid-container">
+        <!-- Botão de Mapas -->
+        <a href="{{ url_for('mapa') }}" class="button map-button">
+            <img src="{{ url_for('static', filename='images/map-icon.png') }}" alt="Mapas">
+            <span>Mapas</span>
+        </a>
+        
+        <!-- Botão de Alertas -->
+        <a href="{{ url_for('alertas') }}" class="button alert-button">
+            <img src="{{ url_for('static', filename='images/alert-icon.png') }}" alt="Alertas">
+            <span>Alertas</span>
+        </a>
+        
+        <!-- Botão de Gráficos -->
+        <a href="{{ url_for('graficos') }}" class="button graph-button">
+            <img src="{{ url_for('static', filename='images/graph-icon.png') }}" alt="Gráficos">
+            <span>Gráficos</span>
+        </a>
+    </div>
+</div>
+  <!-- Footer opcional se necessário -->
+  <footer>
+    <p>&copy; 2024 Healthy Security. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações Administração</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dash.css') }}">
+</head>
+<body>
+  <div class="configuracoes-container">
+    <h1>Configurações Administração</h1>
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+
+    <form action="#" method="POST">
+      <input type="text" name="usuario" placeholder="Nome de usuário" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <button type="submit">Salvar Configurações</button>
+    </form>
+  </div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações Administração</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dash.css') }}">
+</head>
+<body>
+  <!-- Barra superior fixa -->
+  <header class="navbar">
+    <div class="navbar-content">
+      <h1>Healthy Security</h1>
+    </div>
+  </header>
+
+  <div class="configuracoes-container">
+    <h1>Configurações Administração</h1>
+    
+    <!-- Botão de voltar -->
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+    
+    <!-- Formulário de adicionar usuário -->
+    <div class="form-container">
+      <h3>Adicionar Novo Usuário</h3>
+      <form action="#" method="POST">
+        <input type="text" name="usuario" placeholder="Nome de usuário" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Salvar Configurações</button>
+      </form>
+    </div>
+
+    <!-- Lista de Usuários -->
+    <div class="usuarios-lista">
+      <h3>Lista de Usuários</h3>
+      <table class="usuarios-tabela">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Usuário 1</td>
+            <td>usuario1@exemplo.com</td>
+            <td>
+              <a href="#" class="button">Editar</a>
+              <a href="#" class="button">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Usuário 2</td>
+            <td>usuario2@exemplo.com</td>
+            <td>
+              <a href="#" class="button">Editar</a>
+              <a href="#" class="button">Excluir</a>
+            </td>
+          </tr>
+          <!-- Adicionar mais usuários conforme necessário -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Botão para acessar arquivo LGPD -->
+    <div class="lgpd-container">
+      <a href="{{ url_for('static', filename='documentos/lgpd.pdf') }}" class="button" target="_blank">Acessar Arquivo LGPD</a>
+    </div>
+  </div>
+  <!-- Footer opcional se necessário -->
+  <footer>
+    <p>&copy; 2024 Healthy Security. Todos os direitos reservados.</p>
+  </footer> 
+</body>
+</html>
+

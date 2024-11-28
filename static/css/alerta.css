@@ -1,0 +1,213 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #555555; /* Cor de fundo cinza mais escuro */
+  color: #f0f0f0; /* Cor do texto mais claro */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal */
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Título */
+h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #f0f0f0; /* Cor do título */
+}
+
+/* Grid dos botões principais */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo */
+  justify-content: center; /* Alinha os cards ao centro */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px; /* Espaçamento interno do container */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Botões gerais */
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #888888; /* Cor de fundo dos cards */
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra dos cards */
+  transition: transform 0.3s, background-color 0.3s;
+  color: #f0f0f0;
+  width: 200px; /* Largura fixa dos cards */
+  height: 200px; /* Altura fixa dos cards */
+}
+
+.button:hover {
+  background-color: #777777; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Aumento do card ao passar o mouse */
+}
+
+/* Botão "Voltar" com estilo reduzido */
+.back-button {
+  width: 150px; /* Largura menor */
+  height: 50px; /* Altura menor */
+  font-size: 16px; /* Texto menor */
+  margin-top: 20px; /* Espaçamento superior */
+  background-color: #666666; /* Cor diferenciada */
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #555555; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Efeito de hover */
+}
+
+/* Imagens dentro dos botões */
+.button img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+/* Texto dentro dos botões */
+.button span {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsividade: ajuste dos botões principais */
+@media (max-width: 768px) {
+  .button {
+    width: 45%; /* Ajuste para 2 cards por linha em telas menores */
+    height: auto; /* Altura ajustada */
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    width: 90%; /* Ajuste para 1 card por linha em telas muito pequenas */
+  }
+}
+
+/* Estilos existentes */
+
+/* Novas regras para a página de alertas e gráfico */
+.grafico-container {
+  text-align: center; /* Centraliza a imagem */
+  margin: 40px 0; /* Espaçamento ao redor da imagem */
+}
+
+/* Estilo da imagem do gráfico */
+.grafico-imagem {
+  width: 80%; /* A imagem ocupa 80% da largura da tela */
+  max-width: 600px; /* A imagem não ultrapassa 600px de largura */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para a tabela na página de alertas */
+.tabela-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.tabela-alertas {
+  width: 100%;
+  border-collapse: collapse; /* Remove o espaço entre as bordas da tabela */
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra na tabela */
+}
+
+.tabela-alertas th, .tabela-alertas td {
+  padding: 10px;
+  border: 1px solid #ddd; /* Borda suave entre as células */
+}
+
+.tabela-alertas th {
+  background-color: #444; /* Cor de fundo do cabeçalho */
+  color: #444; /* Cor do texto do cabeçalho */
+}
+
+.tabela-alertas tr:hover {
+  background-color: #e0e0e0; /* Destaque ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .tabela-alertas {
+    font-size: 14px; /* Ajusta o tamanho da fonte em telas menores */
+  }
+}
+
+/* Barra de navegação no topo */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Cor de fundo da barra */
+  color: white; /* Cor do texto */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  z-index: 1000; /* Garantindo que a barra fique acima do conteúdo */
+}
+
+.navbar-content h1 {
+  margin: 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Ajuste do layout para incluir a barra fixa */
+body {
+  margin: 0;
+  padding-top: 60px; /* Espaço abaixo da barra superior */
+}
+
+/* Estilização adicional (mantida ou ajustada conforme necessário) */
+.alertas-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.tabela-alertas {
+  margin: 20px auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.tabela-alertas th, 
+.tabela-alertas td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tabela-alertas th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.button.back-button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button.back-button:hover {
+  background-color: #333;
+}
+
+

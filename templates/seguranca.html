@@ -1,0 +1,63 @@
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informativos sobre Segurança</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dash.css') }}">
+</head>
+<body>
+  <div class="seguranca-container">
+    <h1>Informativos sobre Segurança</h1>
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+    <p>Alerta sobre segurança...</p>
+  </div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informativos sobre Segurança</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dash.css') }}">
+</head>
+<body>
+  <!-- Barra superior fixa -->
+  <header class="navbar">
+    <div class="navbar-content">
+      <h1>Healthy Security</h1>
+    </div>
+  </header>
+
+  <div class="seguranca-container">
+    <h1>Informativos sobre Segurança</h1>
+    
+    <!-- Botão de voltar -->
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+    
+    <!-- Link para vídeo explicativo -->
+    <div class="video-link-container">
+      <h3>Assista ao Vídeo Explicativo do Sistema</h3>
+      <p>Para entender melhor como funciona o sistema, clique no link abaixo:</p>
+      <a href="https://linkdo_video.com" class="button">Assistir ao Vídeo</a>
+    </div>
+    
+    <!-- Formulário de Feedback e Sugestões -->
+    <div class="feedback-container">
+      <h3>Feedback e Sugestões</h3>
+      <form action="#" method="POST">
+        <textarea name="feedback" rows="4" placeholder="Escreva seu feedback ou sugestão..." required></textarea>
+        <button type="submit">Enviar Feedback</button>
+      </form>
+    </div>
+  </div>
+    <!-- Footer opcional se necessário -->
+    <footer>
+      <p>&copy; 2024 Healthy Security. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
